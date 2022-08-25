@@ -4,10 +4,9 @@ import Translate from "./components/translate";
 import Languages from "./components/languages";
 
 export default function App() {
-  
   return (
     <div>
-      <h3>Hi there!</h3>
+      <h3>Hello there!</h3>
     </div>
   );
 }
