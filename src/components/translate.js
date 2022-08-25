@@ -48,14 +48,16 @@ const debounce = (fn) => {
   };
 };
 
+const new_key = process.env.REACT_APP_API_URL;
+
 const doTranslation = debounce(
   async (input, languageCode, cancelToken, callback) => {
     try {
       const { data } = await axios.post(
-        "https://translation.googleapis.com/language/translate/v2?key=AIzaSyCf0Xy0OnhxlduyEt3K8zP-sOuu-l_u6uA",
+        `https://translation.googleapis.com/language/translate/v2?key=${new_key}`,
         {
           q: input,
-          target: languageCode
+          target: languageCode,
         },
         { cancelToken: cancelToken.token }
       );
