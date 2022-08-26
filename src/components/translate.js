@@ -13,7 +13,7 @@ function Translate({ language, text }) {
 }
 
 const useTranslation = (text, language) => {
-  const [translated, setTranslated] = useState("");
+  const [translated, setTranslated] = useState(""); //translated result
 
   useEffect(() => {
     if (!text) {

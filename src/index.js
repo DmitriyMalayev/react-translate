@@ -13,3 +13,10 @@ root.render(
     </div>
   </StrictMode>
 );
+/*
+index.js
+  First file that gets executed when our project starts 
+createRoot
+  Used to render a React element into the DOM with render
+  
+*/
